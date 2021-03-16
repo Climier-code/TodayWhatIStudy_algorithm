@@ -1,7 +1,8 @@
 # TodayWhatIStudy_algorithm
 
 1. [Sorting](sorting)
-2. [DynamicProgramming](DynamicProgramming)
+2. [Recursive](Recursive)
+3. [DynamicProgramming](DynamicProgramming)
 
 
 
