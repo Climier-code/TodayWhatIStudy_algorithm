@@ -1,7 +1,7 @@
 # TodayWhatIStudy_algorithm
 
-1. [Sorting](sorting/)
-2. 
+1. [Sorting](sorting)
+2. [DynamicProgramming](DynamicProgramming)
 
 
 
