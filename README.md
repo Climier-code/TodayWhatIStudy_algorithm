@@ -1,6 +1,9 @@
 # TodayWhatIStudy_algorithm
 
-1. [Sorting](sorting)
+## 알고리즘에 필요한 파이썬 내용들
+- [Algorithm with Python](Python)
+## 알고리즘 종류
+1. [Sorting](Sorting)
 2. [Recursive](Recursive)
 3. [DynamicProgramming](DynamicProgramming)
 
