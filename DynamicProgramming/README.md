@@ -27,4 +27,4 @@ def fibo_dp(num):
     return cache[num]
 ```
 
-- **시간복잡도**: 크기가 작을 때는 재귀와 비슷, 클 경우 DP가 훨씬 빠름(feat. Memoization)
+- **시간복잡도**: 크기가 작을 때는 재귀와 비슷 _ O(n), 클 경우 DP가 훨씬 빠름(feat. Memoization)
