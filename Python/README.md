@@ -10,14 +10,15 @@
 ## List
 - 초기화: `list = []`
 - 값 추가: `list.append(들어갈 값)`
+- list comprehension
 ```python
-# 첫번째
+# 일반적인 list에 넣는 for문 방식
 list = []
 for n in range(1,11):
     if(n % 3 == 0):
         list.append(n)
 
-# 두 번째(이걸 잘 사용해보자)
+# list comprehension(이걸 잘 사용해보자)
 list = [n for n in range(1, 11) if n % 3 == 0]
 ```
 - index
