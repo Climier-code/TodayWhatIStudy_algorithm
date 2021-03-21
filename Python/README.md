@@ -51,8 +51,7 @@ list = [n for n in range(1, 11) if n % 3 == 0]
   - 오름차순 정렬: `list.sort()`
   - 순서 반대로: `list.reverse()`
   - 위의 둘 동시에: `list.sort(reverse=True)`
-  - 원래 리스트는 두고 새로운 리스트 리턴: `list2 = sorted(list1)`
-    -`sorted(리스트, 기준, reverse=True)`
+  - 원래 리스트는 두고 새로운 리스트 리턴: `list2 = sorted(list1)` -`sorted(리스트, 기준, reverse=True)`
 
 ## Class(객체 지향 프로그래밍)
 
@@ -89,9 +88,10 @@ class NodeMgmt:
 
 > 기본적인 내장 함수로 queue가 있음
 
+- **가져오기**: `import queue`
+
 ### Queue
 
-- **가져오기**: `import queue`
 - **객체 생성**: `data_queue = queue.Queue()`
 - **값 넣기**: `data_queue.put(1)`
 - **값 꺼내기**: `data_queue.get()`
@@ -105,6 +105,14 @@ class NodeMgmt:
 
 - **우선순위 큐 객체 생성**: `data_queue = queue.PriorityQueue()`
 - **값 넣기**: `data_queue.put((5, 1))`
+
+## HeapQueue
+
+> heap queue를 라이브러리를 이용해 사용 가능
+
+- **가져오기**: `import heapqueue`
+- **값 넣기**: `heapq.heappush(queue, [2, 'A'])`
+- **값 꺼내기**: `heapq.heappop(queue)` \_ 우선순위가 낮은 순서대로 pop
 
 ## Stack
 
