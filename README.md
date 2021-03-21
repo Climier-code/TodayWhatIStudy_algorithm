@@ -11,6 +11,7 @@
 3. [Recursive](Recursive)
 4. [DynamicProgramming](DynamicProgramming)
 5. [Greedy Algorithm](Greedy)
+6. [Minimum Spanning Tree](MST)
 
 ## 시간복잡도 VS 공간복잡도
 

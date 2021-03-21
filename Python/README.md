@@ -33,6 +33,8 @@ list = [n for n in range(1, 11) if n % 3 == 0]
   - `list[0:-1]`: 처음부터 마지막의 바로 앞까지
   - `list[1:3]`: 1번부터 2번까지
 
+- `a, b = [1,2]` => `a = 1, b = 2`
+
 - **리스트 연결**: `list3 = list1 + list2`
 
 - **리스트 자체를 뒤에 추가**:`list.extend([4,5])`
@@ -52,6 +54,13 @@ list = [n for n in range(1, 11) if n % 3 == 0]
   - 순서 반대로: `list.reverse()`
   - 위의 둘 동시에: `list.sort(reverse=True)`
   - 원래 리스트는 두고 새로운 리스트 리턴: `list2 = sorted(list1)` -`sorted(리스트, 기준, reverse=True)`
+
+## Dictionary
+
+> Key와 Value가 한 쌍으로 이루어진 형태
+
+- for & Dictionary
+  - `distances = {node: float('inf') for node in graph}`
 
 ## Class(객체 지향 프로그래밍)
 
