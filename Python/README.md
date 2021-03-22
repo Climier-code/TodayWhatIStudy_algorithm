@@ -2,6 +2,11 @@
 
 > 알고리즘에서 써먹을 수 있는 파이썬 문법들
 
+# 값
+
+- `inf`: 무한대에 가까운 값
+- `a, b, c, d = list(), 1, 0, dict()`: 이거 한줄로 표현 가능
+
 ## 반복문
 
 - `range(stop)`: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
@@ -59,8 +64,42 @@ list = [n for n in range(1, 11) if n % 3 == 0]
 
 > Key와 Value가 한 쌍으로 이루어진 형태
 
-- for & Dictionary
+- **for & Dictionary**
+
   - `distances = {node: float('inf') for node in graph}`
+
+- **빈 리스트로 초기화**: defaultdict 함수를 사용해서, key에 대한 value를 지정하지 않았을 시, 빈 리스트로 초기화하기
+
+```python
+from collections import defaultdict
+
+list_dict = defaultdict(list)
+print (list_dict['key1'])
+```
+
+## set(집합)
+
+- `{}`
+- 값만 존재하고 키는 존재 X
+- `set()`을 통해 집합 생성
+- **원소 추가**
+  - 하나의 데이터 추가 : `set.add(100)`
+  - 둘 이상의 데이터 추가: `set.update([3,4,5])`
+- **원소 제거**
+  - `set.remove(3)`
+  - `set.discard(3)`
+- **집합 복사**: `a = set.copy()`
+
+### 연산
+
+- **합집합**: `c = a.union(b)`
+- **교집합**: `c = a.intersection(b)`
+- **차집합**: `c = a.difference(b)`
+- **대칭 차집합**: `c = a.symmetric_difference(b)`
+- **부분집합의 여부 확인**
+  - `a.issubset(b)` - 부분집합이면 True
+  - `a.issuperset(b)` - 부분집합이면 False
+- **교집합의 여부 확인**: `a.isdisjoint(b)`
 
 ## Class(객체 지향 프로그래밍)
 
@@ -119,7 +158,11 @@ class NodeMgmt:
 
 > heap queue를 라이브러리를 이용해 사용 가능
 
-- **가져오기**: `import heapqueue`
+- **가져오기**
+  - `import heapqueue`
+  - `import heapq`
+  - `from heapq import *`
+- **배열을 heap queue로 선언**: `heapq.heapity(queue)`
 - **값 넣기**: `heapq.heappush(queue, [2, 'A'])`
 - **값 꺼내기**: `heapq.heappop(queue)` \_ 우선순위가 낮은 순서대로 pop
 

@@ -12,6 +12,7 @@
 4. [DynamicProgramming](DynamicProgramming)
 5. [Greedy Algorithm](Greedy)
 6. [Minimum Spanning Tree](MST)
+7. [Back Tracking](BackTracking)
 
 ## 시간복잡도 VS 공간복잡도
 
