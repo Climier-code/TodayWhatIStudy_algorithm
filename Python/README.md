@@ -2,10 +2,23 @@
 
 > 알고리즘에서 써먹을 수 있는 파이썬 문법들
 
-# 값
+## int
 
 - `inf`: 무한대에 가까운 값
 - `a, b, c, d = list(), 1, 0, dict()`: 이거 한줄로 표현 가능
+- 형변환
+  - `str()`
+  - `int()`
+- float는 쓰지말자
+- 분수는 튜플형식으로 저장하자
+
+## String
+
+- `+` 보다는 `str.join()`를 쓰자
+- `.split(기준, 몇번 쪼갤지)`: 문자열을 어떠한 기준으로 나눌 때 사용
+- `.replace(찾을 값, 바꿀 값, 바꿀 횟수)`: 문자열의 문자를 변경할 때 사용
+- `chr()`: 아스키 코드 값을 문자로 변환
+- `ord()`: 특정한 한 문자를 아스키 코드 값으로 변환
 
 ## 반복문
 
@@ -55,10 +68,21 @@ list = [n for n in range(1, 11) if n % 3 == 0]
   - `if a not in list:`
 
 - **정렬**
+
   - 오름차순 정렬: `list.sort()`
   - 순서 반대로: `list.reverse()`
   - 위의 둘 동시에: `list.sort(reverse=True)`
   - 원래 리스트는 두고 새로운 리스트 리턴: `list2 = sorted(list1)` -`sorted(리스트, 기준, reverse=True)`
+
+- `reduce(함수, 순서형 자료)`: 누적으로 계산하기 위해 사용
+- `filter(함수, 리스트)`: 특정조건으로 거른 것을 반환
+
+## Tuple
+
+> ()로 이루어진 형태
+
+- 입력받기: a,b = `map(int, input().split())`
+- `a, b = b, a`
 
 ## Dictionary
 
@@ -69,6 +93,8 @@ list = [n for n in range(1, 11) if n % 3 == 0]
   - `distances = {node: float('inf') for node in graph}`
 
 - **빈 리스트로 초기화**: defaultdict 함수를 사용해서, key에 대한 value를 지정하지 않았을 시, 빈 리스트로 초기화하기
+- `dict.keys()`: 키값만 빼오기
+- `dict.values()`: value값만 빼오기
 
 ```python
 from collections import defaultdict
@@ -78,6 +104,8 @@ print (list_dict['key1'])
 ```
 
 ## set(집합)
+
+> 중복을 해결해줌 but 시간복잡도가 큼
 
 - `{}`
 - 값만 존재하고 키는 존재 X
