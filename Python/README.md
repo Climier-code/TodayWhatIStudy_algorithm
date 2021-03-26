@@ -31,6 +31,7 @@
 
 - **초기화**: `list = []`
 - **값 추가**: `list.append(들어갈 값)`
+- **최대, 최소**: `max(list)`, `min(list)`
 - **list comprehension**
 
 ```python
