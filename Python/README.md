@@ -26,6 +26,7 @@
 - `range(start, stop)`: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
 - `range(start, stop, step)`: 0, 2, 4, 6, 8, 10, 12, 14, 16, 18
 - **리스트에서 하나하나 가져옴**: `for a in list:`
+- `for idx, data in enumerate(list):` 리스트 안의 인덱스 번호와 데이터를 반환
 
 ## List
 
@@ -96,6 +97,7 @@ list = [n for n in range(1, 11) if n % 3 == 0]
 - **빈 리스트로 초기화**: defaultdict 함수를 사용해서, key에 대한 value를 지정하지 않았을 시, 빈 리스트로 초기화하기
 - `dict.keys()`: 키값만 빼오기
 - `dict.values()`: value값만 빼오기
+- `dic['key'] = value`: key값에 value 삽입
 
 ```python
 from collections import defaultdict
