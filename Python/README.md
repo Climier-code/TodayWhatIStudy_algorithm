@@ -2,6 +2,16 @@
 
 > 알고리즘에서 써먹을 수 있는 파이썬 문법들
 
+## 코드 줄 줄이는 몇가지 방법
+- `a, b = 1, 2`
+- `len(list) == len(set(list))`
+- `for idx, data in enumerate(list):`
+- `list comprehension`
+- `list[n:]`
+- `max(  ), min(  )`
+- ...
+
+
 ## int
 
 - `inf`: 무한대에 가까운 값
