@@ -32,6 +32,10 @@
   - 문법이 쉬움
   - String, 정렬, 파싱, 객체를 다뤄야하는 문제에 유용
 
+## 코딩테스트 유형별 알고리즘 분류
+
+- [Type Of CodingTest](TypeofCodingTest)
+
 ## 알고리즘 풀이
 
 - [BAEKJOON](BAEKJOON)
