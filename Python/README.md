@@ -3,14 +3,17 @@
 > 알고리즘에서 써먹을 수 있는 파이썬 문법들
 
 ## 코드 줄 줄이는 몇가지 방법
+
 - `a, b = 1, 2`
 - `len(list) == len(set(list))`
 - `for idx, data in enumerate(list):`
 - `list comprehension`
 - `list[n:]`
-- `max(  ), min(  )`
+- `max( ), min( )`
 - ...
-
+- sys라이브러리로 입력 데이터 크기 조절
+  - `import sys`
+  - `input = sys.stdin.readline`
 
 ## int
 
